@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@font-face { 
+  font-family: 'KH Teka';
+  src: url('https://shot.new/public-fonts/KHTeka/KHTeka-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+} 
+@font-face { 
+  font-family: 'KH Teka';
+  src: url('https://shot.new/public-fonts/KHTeka/KHTeka-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+} 
+@font-face { 
+  font-family: 'KH Teka';
+  src: url('https://shot.new/public-fonts/KHTeka/KHTeka-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+} 
+@font-face { 
+  font-family: 'PP Editorial New';
+  src: url("https://shot.new/public-fonts/PP%20Editorial%20New/PPEditorialNew-Italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@theme {
+  --font-sans: 'KH Teka', sans-serif;
+  --font-serif: 'PP Editorial New', serif;
+  
+  --color-kive-bg: #f1f3f5;
+  --color-kive-text: #11181c;
+  --color-kive-purple: #5930e5;
+  --color-kive-purple-hover: #501cde;
+  --color-kive-input: #e4e2e4;
+}
+
+body {
+  background-color: var(--color-kive-bg);
+  color: var(--color-kive-text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@keyframes shimmer {
+  0% { background-position: 200% center; }
+  100% { background-position: -200% center; }
+}
+
+.animate-shimmer {
+  animation: shimmer 2.5s linear infinite;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #e5e7eb;
+  border-radius: 20px;
+}
